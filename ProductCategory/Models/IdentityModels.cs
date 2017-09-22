@@ -29,5 +29,11 @@ namespace ProductCategory.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ProductCategory.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<ProductCategory.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<ProductCategory.Models.ProductCategoryMapping> ProductCategoryMappings { get; set; }
     }
 }
