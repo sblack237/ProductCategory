@@ -190,6 +190,14 @@
     <Compile Include="Migrations\201709221124481_AddCategoryCreatedOnUtc.Designer.cs">
       <DependentUpon>201709221124481_AddCategoryCreatedOnUtc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709221605119_AddForeignKey.cs" />
+    <Compile Include="Migrations\201709221605119_AddForeignKey.Designer.cs">
+      <DependentUpon>201709221605119_AddForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709221614260_AddForeignKeyProductCategoryMapping.cs" />
+    <Compile Include="Migrations\201709221614260_AddForeignKeyProductCategoryMapping.Designer.cs">
+      <DependentUpon>201709221614260_AddForeignKeyProductCategoryMapping.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -237,6 +245,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709221124481_AddCategoryCreatedOnUtc.resx">
       <DependentUpon>201709221124481_AddCategoryCreatedOnUtc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709221605119_AddForeignKey.resx">
+      <DependentUpon>201709221605119_AddForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709221614260_AddForeignKeyProductCategoryMapping.resx">
+      <DependentUpon>201709221614260_AddForeignKeyProductCategoryMapping.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
