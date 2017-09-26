@@ -9,17 +9,33 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using ProductCategory.Models;
+using ProductCategory.Interfaces;
 
 namespace ProductCategory.Controllers
 {
     public class ProductsController : ApiController
     {
+
+
+        private readonly IProductRepository productRepository;
+        /// <summary>
+        /// Initializes a new instance of the Product Controller/> 
+        /// </summary>
+        public ProductsController(Interfaces.IProductRepository productRepository)
+        {
+            this.productRepository = productRepository;
+            
+        }
+
         private ApplicationDbContext db = new ApplicationDbContext();
+        public readonly object Products;
 
         // GET: api/Products
-        public IQueryable<Product> GetProducts()
+        public IQueryable<Interfaces.IProductRepository> GetProducts()
         {
-            return db.Products;
+
+            return GetProducts();
+
         }
 
         // GET: api/Products/5
